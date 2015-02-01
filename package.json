@@ -1,0 +1,9 @@
+{
+  "name": "https_somewhere",
+  "version": "1.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-shell": "~1.1.1",
+    "grunt-closure-compiler": "0.0.21"  
+  }
+}
