@@ -1,0 +1,19 @@
+{
+  "name": "HTTPS-Somewhere",
+  "version": "1.0.0",
+  "description": "Enforce HTTPS wherever you want",
+  "main": "background.js",
+  "scripts": {
+    "vendor": "node npm-script/vendor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-mw:MidnightWonderer/HTTPS-Somewhere.git"
+  },
+  "author": "MidnightWonderer",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-shell": "~0.4.3"
+  }
+}
