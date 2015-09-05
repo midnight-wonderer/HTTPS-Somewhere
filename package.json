@@ -19,6 +19,8 @@
     "gulp-shell": "~0.4.3",
     "gulp-watch": "~4.3.5",
     "require-uncached": "~1.0.2",
-    "moment": "~2.10.6"
+    "moment": "~2.10.6",
+    "gulp-replace": "~0.5.4",
+    "gulp": "~3.9.0"
   }
 }
