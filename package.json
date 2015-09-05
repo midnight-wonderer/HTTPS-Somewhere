@@ -4,7 +4,7 @@
   "description": "Enforce HTTPS wherever you want",
   "main": "background.js",
   "scripts": {
-    "vendor": "node npm-script/vendor.js",
+    "vendor": "node npm_script/vendor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
