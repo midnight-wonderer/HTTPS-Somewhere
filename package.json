@@ -5,7 +5,9 @@
   "main": "background.js",
   "scripts": {
     "vendor": "node npm_script/vendor.js",
-    "build": "node npm_script/build.js",
+    "build": "rm -rf build&&cp -r source build&&npm run sass&&npm run unmap",
+    "sass": "cd source/style&&sass --sourcemap=none -r sass-globbing main.scss ../../build/main.css&&cd -",
+    "unmap": "node npm_script/unmap.js",
     "watch": "node npm_script/watch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
