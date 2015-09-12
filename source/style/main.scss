@@ -1,5 +1,3 @@
-@import "variable/**/*";
-
-body{
-  background: $color-alto;
-}
+@import "variable/variable";
+@import "layout/layout";
+@import "theme/theme";

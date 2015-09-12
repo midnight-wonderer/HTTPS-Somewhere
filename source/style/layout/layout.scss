@@ -1,0 +1,19 @@
+.layout-full-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.layout-table-cell {
+  display: table-cell;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}

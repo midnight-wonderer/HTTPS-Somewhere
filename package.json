@@ -5,24 +5,26 @@
   "main": "background.js",
   "scripts": {
     "vendor": "node npm_script/vendor.js",
-    "build": "rm -rf build&&cp -r source build&&npm run sass&&npm run unmap",
-    "sass": "cd source/style&&sass --sourcemap=none -r sass-globbing main.scss ../../build/main.css&&cd -",
+    "build": "rm -rf build&&cp -r source build&&npm run sass&&npm run unmap&&npm run cleanup",
+    "sass": "node npm_script/sass.js",
     "unmap": "node npm_script/unmap.js",
+    "cleanup": "find build -iname '*.scss' -exec rm -f {} \\;&& find build -iname '*.map' -exec rm -f {} \\; &&find build -type d -empty -delete",
     "watch": "node npm_script/watch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com-mw:MidnightWonderer/HTTPS-Somewhere.git"
+    "url": "git@github.com:MidnightWonderer/HTTPS-Somewhere.git"
   },
   "author": "MidnightWonderer",
   "license": "MIT",
   "devDependencies": {
     "gulp-shell": "~0.4.3",
     "gulp-watch": "~4.3.5",
-    "require-uncached": "~1.0.2",
     "moment": "~2.10.6",
     "gulp-replace": "~0.5.4",
-    "gulp": "~3.9.0"
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4",
+    "underscore": "~1.8.3"
   }
 }
